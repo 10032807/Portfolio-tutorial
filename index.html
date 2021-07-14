@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+       <div class="user">
+          <img src="IMG_20191002_052820_400.jpg" alt="">
+          <h3 class="name">SARDOR</h3> 
+          <p class="post">Frontend developer</p>
+       </div>
+       <nav class="navbar">
+           <ul>
+               <li><a href="#home">home</a></li>
+               <li><a href="about.html">about</a></li>
+               <li><a href="service.html">service</a></li>
+               <li><a href="education.html">education</a></li>
+               <li><a href="contact.html">contact</a></li>
+           </ul>
+       </nav>
+    </header>
+
+    <div class="container">
+        
+        <section class="home" id="home">
+            <h3>hi there...</h3>
+            <h3 class="name">my name is <span>SARDOR</span></h3>
+            <h3 class="post">i am a <span class="typing-text">frontend developer</span></h3>
+            <a href="#"><button class="btn">hire me</button></a>
+          <div class="share">
+            <a href="https://www.facebook.com/" target="_blank"  class="fa fa-facebook-f"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-odnoklassniki"></a>
+          </div>
+        </section>
+    </div>
+
+    <div class="theme-toggler">
+        <span style="background: linear-gradient(deeppink, purple);"></span>
+        <span style="background: linear-gradient(lightgreen,crimson);"></span>
+        <span style="background: linear-gradient(coral,red);"></span>
+        <span style="background: linear-gradient(coral,blueviolet);"></span>
+        <span style="background: linear-gradient(#999,#111);"></span>
+    </div>
+    <!--
+   <section class="about" id="about">
+
+        <h1 class="heading">Abaut me</h1>
+
+        <div class="content">
+            <h3 class="name"> my name is <span>SARDOR</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quaerat illo similique natus, iusto incidunt adipisci vitae magnam libero.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos corrupti sequi facere quisquam hic ad culpa, nam mollitia nostrum maiores, aliquam optio quaerat dolores corporis neque, non tempore architecto magni.</p>
+        </div>
+        <div class="skills">
+            <div class="progress">
+                <h3>Html <span>60%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>Css <span>55%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3> Javascript <span>0%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3> Photoshop <span>0%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+        </div>
+    </section> 
+    <section class="service" id="service">
+        <h1 class="heading">my service</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa fa-html5"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, nemo!</p>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-css3"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, nemo!</p>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-js"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, nemo!</p>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-wordpress"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, nemo!</p>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-paint-brush"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, nemo!</p>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-bullhorn"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, nemo!</p>
+            </div>
+        </div>
+    </section>  -->
+
+    <!-- bu yerda vedioni ko'rganimdek bajardim lekin xato deb chiqarayapdi buni surashim kerak 
+    bunda stringdagi yozuvlarni chiqarmay boshqa narsalar chiqarib yuborayapdi lekin vediodan qilganini barchasini uzidek kuchirganman -->
+    <!-- type.js cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <script>
+
+       var type = new Typed('.typing-text',{
+           string : ['Web designer', 'front end developer', 'graphic designer', 'photographer'],
+           typeSpeed: 120,
+           loop:true 
+       });
+   
+        let themeColor = document.querySelectorAll('.theme-toggler span');
+        themeColor.forEach(color => color.addEventListener('click',() => {
+            let background = color.style.background;
+            document.querySelector('body').style.background = background;
+        }));
+    </script>
+</body>
+</html>
